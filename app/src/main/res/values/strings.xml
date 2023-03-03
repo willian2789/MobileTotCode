@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">TotCod</string>
+    <string name="entrar">Confirmar</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="login">Usuário</string>
+    <string name="senha">Senha</string>
+    <string name="nome">Nome e Sobrenome</string>
+</resources>

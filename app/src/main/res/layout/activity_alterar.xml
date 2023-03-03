@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fillViewport="true" >
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/backgroud"
+    tools:context=".CadastroActivity">
+
+    <View
+        android:id="@+id/container"
+        style="@style/ConteinerComp"
+        android:layout_marginTop="200dp"
+        android:layout_marginBottom="200dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></View>
+
+    <EditText
+        android:id="@+id/ETNomeC"
+        style="@style/ET"
+        android:drawableRight="@drawable/ic_face"
+        android:hint="@string/nome"
+        app:layout_constraintStart_toStartOf="@id/container"
+        app:layout_constraintEnd_toEndOf="@id/container"
+        app:layout_constraintTop_toTopOf="@id/container"
+        />
+    <EditText
+        android:id="@+id/ETLoginC"
+        style="@style/ET"
+        android:drawableRight="@drawable/ic_email"
+        android:hint="@string/login"
+        app:layout_constraintStart_toStartOf="@id/container"
+        app:layout_constraintEnd_toEndOf="@id/container"
+        app:layout_constraintTop_toBottomOf="@id/ETNomeC"
+        />
+
+    <EditText
+        android:id="@+id/ETSenhaC"
+        style="@style/ET"
+        android:drawableRight="@drawable/ic_eye"
+        android:hint="@string/senha"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@id/container"
+        app:layout_constraintStart_toStartOf="@id/container"
+        app:layout_constraintTop_toBottomOf="@id/ETLoginC" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnConfC"
+        style="@style/Btn"
+        android:text="@string/entrar"
+        app:layout_constraintStart_toStartOf="@id/container"
+        app:layout_constraintEnd_toEndOf="@id/container"
+        app:layout_constraintTop_toBottomOf="@id/ETSenhaC">
+    </androidx.appcompat.widget.AppCompatButton>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnLimparC"
+        style="@style/Btn"
+        android:text="@string/cancelar"
+        app:layout_constraintStart_toStartOf="@id/container"
+        app:layout_constraintEnd_toEndOf="@id/container"
+        app:layout_constraintTop_toBottomOf="@id/btnConfC">
+    </androidx.appcompat.widget.AppCompatButton>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
